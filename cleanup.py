@@ -37,7 +37,7 @@ class CLeanup:
 
     def controller(self):
         print(f"Starting Cleanup on {self.base_path}")
-        self.get_files_from_directory(os.getcwd())
+        self.get_files_from_directory()
         self.get_csv_files()
         self.delete_files()
 
